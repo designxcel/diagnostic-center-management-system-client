@@ -45,7 +45,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar fixed z-10 bg-opacity-50 max-w-7xl bg-black text-white px-10">
+    <div className="navbar w-full bg-white text-gray-700 px-10">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -72,7 +72,7 @@ const Navbar = () => {
           </ul>
         </div>
         <li className="list-none text-xl font-bold">
-          <Link to="/">BISTRO BOSS</Link>
+          <Link to="/">TECH<span className="text-blue-700">MED</span></Link>
         </li>
       </div>
       <div className="navbar-center hidden lg:flex">
