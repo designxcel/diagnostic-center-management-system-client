@@ -1,0 +1,44 @@
+[
+    {
+        "center_id": 1,
+        "image": "https://i.ibb.co/NKFpf0D/diagonostic-center-inner-img2.jpg",
+        "name": "Center 1",
+        "phone": "010-0000-0000",
+        "location": "Farmgate, Dhaka"
+    },
+    {
+        "center_id": 2,
+        "image": "https://i.ibb.co/rpNLcfZ/best-diagnostic-lab-noida.jpg",
+        "name": "Center 2",
+        "phone": "010-0000-0000",
+        "location": "Banani, Dhaka"
+    },
+    {
+        "center_id": 3,
+        "image": "https://i.ibb.co/kc787DD/diagonostic-center-inner-img1.jpg",
+        "name": "Center 3",
+        "phone": "010-0000-0000",
+        "location": "Mirpur, Dhaka"
+    },
+    {
+        "center_id": 4,
+        "image": "https://i.ibb.co/kc787DD/diagonostic-center-inner-img1.jpg",
+        "name": "Center 4",
+        "phone": "010-0000-0000",
+        "location": "Gulshan 2, Dhaka"
+    },
+    {
+        "center_id": 5,
+        "image": "https://i.ibb.co/rpNLcfZ/best-diagnostic-lab-noida.jpg",
+        "name": "Center 5",
+        "phone": "010-0000-0000",
+        "location": "Uttara, Dhaka"
+    },
+    {
+        "center_id": 1,
+        "image": "https://i.ibb.co/NKFpf0D/diagonostic-center-inner-img2.jpg",
+        "name": "Center 6",
+        "phone": "010-0000-0000",
+        "location": "Baridhara, Dhaka"
+    }
+]

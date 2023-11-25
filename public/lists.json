@@ -1,0 +1,50 @@
+[
+    {
+        "dr_id": 1,
+        "image": "https://i.ibb.co/Jd46zjW/Dr-Md-Zahidul-Islam-2.jpg",
+        "name": "Dr. Md. Zahidul Islam",
+        "degree":"MBBS, MS (Thoracic Surgery)",
+        "specialist": "Chest & Thoracic Surgery Specialist",
+        "chamber": "National Institute of Diseases of the Chest & Hospital"
+    },
+    {
+        "dr_id": 2,
+        "image": "https://i.ibb.co/Jp9mB30/Dr-Syed-Atiqullah.jpg",
+        "name": "Dr. Syed Atiqullah",
+        "degree":"MBBS (DMC), BCS (Health), FCPS (Medicine), MD (Cardiology)",
+        "specialist": "Cardiology & Medicine Specialist",
+        "chamber": "National Institute of Cardiovascular Diseases & Hospital"
+    },
+    {
+        "dr_id": 3,
+        "image": "https://i.ibb.co/Jp9mB30/Dr-Syed-Atiqullah.jpg",
+        "name": "Dr. Syed Atiqullah",
+        "degree":"MBBS (DMC), BCS (Health), FCPS (Medicine), MD (Cardiology)",
+        "specialist": "Cardiology & Medicine Specialist",
+        "chamber": "National Institute of Cardiovascular Diseases & Hospital"
+    },
+    {
+        "dr_id": 4,
+        "image": "https://i.ibb.co/Dr5SNS9/Prof-Dr-Md-Khoybar-Ali.jpg",
+        "name": "Prof. Dr. Md. Khoybar Ali",
+        "degree":"MBBS, DCH, FCPS (CHILD)",
+        "specialist": "Newborn, Adolescent & Child Diseases Specialist",
+        "chamber": "Ibn Sina Medical College & Hospital"
+    },
+    {
+        "dr_id": 5,
+        "image": "https://i.ibb.co/Dr5SNS9/Prof-Dr-Md-Khoybar-Ali.jpg",
+        "name": "Prof. Dr. Md. Khoybar Ali",
+        "degree":"MBBS, DCH, FCPS (CHILD)",
+        "specialist": "Newborn, Adolescent & Child Diseases Specialist",
+        "chamber": "Ibn Sina Medical College & Hospital"
+    },
+    {
+        "dr_id": 6,
+        "image": "https://i.ibb.co/1mPYNC0/Dr-Nahida-Yeasmin.jpg",
+        "name": "Dr. Nahida Yeasmin",
+        "degree":"MBBS, BCS (Health), FCPS (OBGYN)",
+        "specialist": "Gynecology, Obstetrics Specialist & Surgeon",
+        "chamber": "Shaheed Suhrawardy Medical College & Hospital"
+    }
+]

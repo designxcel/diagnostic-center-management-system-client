@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Slider from "../Slider/Slider";
 import Blogs from "../Blogs/Blogs";
+import ScheduleBanner from "../ScheduleBanner/ScheduleBanner";
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
                 <title>TECHMED | Home</title>
             </Helmet>
             <Slider></Slider>
+            <ScheduleBanner></ScheduleBanner>
             <Blogs></Blogs>
             
         </div>

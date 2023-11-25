@@ -9,11 +9,9 @@ import '@smastrom/react-rating/style.css'
 import { Navigation } from 'swiper/modules';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { Rating } from '@smastrom/react-rating';
-import { useState } from 'react';
 
 
 const Testimonial = () => {
-    const [rating, setRating] = useState(0)
     const axiosPublic = UseAxiosPublic()
     const { data: reviews = [] } = useQuery({
     queryKey: ["reviews"],
@@ -39,10 +37,10 @@ const Testimonial = () => {
                         <img src={review.image} />
                     </div>
                 </div>
-                <div className="text-5xl flex justify-center">
+                <div className="text-5xl text-cyan-400 flex justify-center">
                     <FaQuoteLeft></FaQuoteLeft>
                 </div>
-                <p className='max-w-7xl mx-auto'>{review.desc}</p>
+                <p className='max-w-7xl mx-auto text-gray-400'>{review.desc}</p>
                 <h2 className="text-3xl text-center font-bold uppercase text-gray-700">{review.name}</h2>
             </SwiperSlide>)
             }

@@ -27,7 +27,7 @@ const Blogs = () => {
                       <p className="text-xs text-gray-400 underline">{blog.date}</p>
                       <p className="text-gray-400">{blog.details}</p>
                       <div className="card-actions">
-                        <button className="btn btn-accent uppercase btn-block">Read More</button>
+                        <button className="btn bg-cyan-400 uppercase btn-block">Read More</button>
                       </div>
                     </div>
                   </div>)
