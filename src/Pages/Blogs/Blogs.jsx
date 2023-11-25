@@ -13,6 +13,7 @@ const Blogs = () => {
   });
     return (
         <div className="md:py-20">
+          <div className="divider"></div>
             <div className="uppercase text-center md:p-10">
                 <h2 className="text-4xl">Our Blogs</h2>
                 <h1 className="text-5xl font-bold">Latest News</h1>

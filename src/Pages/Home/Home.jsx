@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Slider from "../Slider/Slider";
 import Blogs from "../Blogs/Blogs";
 import ScheduleBanner from "../ScheduleBanner/ScheduleBanner";
+import Counter from "../Counter/Counter";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Slider></Slider>
             <ScheduleBanner></ScheduleBanner>
             <Blogs></Blogs>
+            <Counter></Counter>
             
         </div>
     );
