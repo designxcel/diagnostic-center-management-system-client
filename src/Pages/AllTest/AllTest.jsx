@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import UseAxiosPublic from "../../Hooks/UseAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import { FaArrowRight, FaEye } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const AllTest = () => {
   const axiosPublic = UseAxiosPublic();
@@ -39,13 +40,17 @@ const AllTest = () => {
             <tbody>
                 {
                     tests.map((test, index) => 
-                            <tr key={test._id}>
+                            <tr key={test._id} test={test}>
                             <th>{index + 1}</th>
                             <td>{test.name}</td>
                             <td>{test.category}</td>
                             <td>{test.center}</td>
                             <td>{test.price}</td>
-                            <td><FaEye></FaEye></td>
+                            <td>
+                              <Link to={`/testdetails/${test._id}`}>
+                                <button><FaEye></FaEye></button>
+                              </Link>
+                            </td>
                             <td><FaArrowRight></FaArrowRight></td>
                             </tr>
                         )

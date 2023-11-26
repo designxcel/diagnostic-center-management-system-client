@@ -10,6 +10,7 @@ import AllUsers from "../Dashboard/AllUsers/AllUsers";
 import DoctorList from "../Dashboard/DoctorsList/DoctorList";
 import AddDoctor from "../Dashboard/AddDoctor/AddDoctor";
 import AdminHome from "../Dashboard/AdminHome/AdminHome";
+import TestDetails from "../TestDetails/TestDetails";
 
 const Routes = createBrowserRouter([
     {
@@ -31,6 +32,11 @@ const Routes = createBrowserRouter([
             {
                 path: "/signup",
                 element: <Signup></Signup>
+            },
+            {
+                path: "/testdetails/:id",
+                element: <TestDetails></TestDetails>,
+                loader: ({params})=> fetch(`http://localhost:5000/test/${params.id}`)
             }
         ]
     },

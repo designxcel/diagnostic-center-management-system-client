@@ -33,7 +33,7 @@ const ScheduleBanner = () => {
                 <TabPanel>
                     <h2 className='text-center uppercase font-bold text-4xl mt-10'>Doctors List</h2>
                     <div className='divider divider-success max-w-5xl mx-auto'></div>
-                    <div className='grid grid-cols-1 md:grid-cols-3 gap-4 p-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-3 gap-4 p-5 overflow-y-scroll h-[650px]'>
                         {
                             drlists.map(doctor =>
                                 <div key={doctor._id} className="card card-side bg-base-100 shadow-md p-2">
