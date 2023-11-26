@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import UseAxiosPublic from "../../Hooks/UseAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaEye } from "react-icons/fa";
 
 const AllTest = () => {
   const axiosPublic = UseAxiosPublic();
@@ -32,6 +32,7 @@ const AllTest = () => {
                 <th>Category</th>
                 <th>Diagnostic Center</th>
                 <th>Price</th>
+                <th>Details</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -44,6 +45,7 @@ const AllTest = () => {
                             <td>{test.category}</td>
                             <td>{test.center}</td>
                             <td>{test.price}</td>
+                            <td><FaEye></FaEye></td>
                             <td><FaArrowRight></FaArrowRight></td>
                             </tr>
                         )

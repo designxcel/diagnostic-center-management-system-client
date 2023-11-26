@@ -4,6 +4,7 @@ import UseAxiosPublic from '../../../Hooks/UseAxiosPublic';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import "./login.css"
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const { signInUser, googleSignIn } = useContext(AuthContext);
@@ -65,6 +66,9 @@ const Login = () => {
     }
     return (
         <div className="login-section">
+          <Helmet>
+            <title>TECHMED | Login</title>
+          </Helmet>
       <div className="h-screen flex justify-evenly items-center max-w-7xl mx-auto">
         {/* <div className="">
           <img src={loginImg} alt="" />

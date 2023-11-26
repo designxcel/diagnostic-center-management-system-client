@@ -1,11 +1,15 @@
-import { FaCalendar, FaHome, FaList } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
+import { FaBook, FaCalendar, FaDochub, FaHome, FaList, FaPhone, FaPhoneAlt, FaUsers } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 
 
 const Dashboard = () => {
-    const isAdmin = false;
+    const isAdmin = true;
     return (
         <div className="flex">
+            <Helmet>
+                <title>TECHMED | Dashboard</title>
+            </Helmet>
             <div className="w-72 bg-orange-400 min-h-screen">
                 <ul className="menu p-4 space-y-4">
                     {
@@ -14,18 +18,18 @@ const Dashboard = () => {
                             <li>
                                 <NavLink to="/dashboard/adminHome"><FaHome></FaHome>Admin Home</NavLink>
                             </li>
-                            {/* <li>
-                                <NavLink to="/dashboard/addItems"><FaUtensils></FaUtensils>Add Items</NavLink>
+                            <li>
+                                <NavLink to="/dashboard/addDoctor"><FaDochub></FaDochub>Add Doctor</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/dashboard/manageItems"><FaList></FaList>Manage Items</NavLink>
+                                <NavLink to="/dashboard/doctorsList"><FaList></FaList>Doctors List</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/dashboard/manageBookings"><FaBook></FaBook>Manage Bookings</NavLink>
+                                <NavLink to="/dashboard/manageBookings"><FaBook></FaBook>Manage Doctors</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/dashboard/allUsers"><FaUsers></FaUsers>All Users</NavLink>
-                            </li> */}
+                            </li>
                         </>
                         : 
                         <>
@@ -56,15 +60,12 @@ const Dashboard = () => {
                     <li>
                         <NavLink to="/"><FaHome></FaHome>Home</NavLink>
                     </li>
-                    {/* <li>
-                        <NavLink to="/menu"><FaUtensilSpoon></FaUtensilSpoon>Our Menu</NavLink>
+                    <li>
+                        <NavLink to="/test"><FaList></FaList>All Test</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/order/salad"><FaShoppingBasket></FaShoppingBasket>Order</NavLink>
+                        <NavLink to="/contact"><FaPhone></FaPhone>Contact</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/contact"><FaPhoneAlt></FaPhoneAlt>Contact</NavLink>
-                    </li> */}
                 </ul>
             </div>
 

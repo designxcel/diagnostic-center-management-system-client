@@ -1,0 +1,5 @@
+.adminHomeBg{
+    background-image: url('../../../assets/adminbg.jpg');
+    background-size: cover;
+    height: 100%;
+}
