@@ -11,6 +11,7 @@ import DoctorList from "../Dashboard/DoctorsList/DoctorList";
 import AddDoctor from "../Dashboard/AddDoctor/AddDoctor";
 import AdminHome from "../Dashboard/AdminHome/AdminHome";
 import TestDetails from "../TestDetails/TestDetails";
+import Cart from "../Dashboard/Cart/Cart";
 
 const Routes = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ const Routes = createBrowserRouter([
             {
                 path: "userProfile",
                 element: <UserProfile></UserProfile>
+            },
+            {
+                path: "cart",
+                element: <Cart></Cart>
             },
             //for admin dashboard
             {

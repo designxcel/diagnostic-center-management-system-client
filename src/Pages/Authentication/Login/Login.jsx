@@ -52,7 +52,9 @@ const Login = () => {
         Swal.fire({
           title: "Logged in!",
           text: "Successfully logged in.",
-          text: "TECHMED",
+          imageUrl: 'https://i.ibb.co/TLMrTRG/techMede.png',
+            imageWidth: 300,
+            imageHeight: 100,
         });
         navigate(from, { replace: true });
       })
@@ -70,9 +72,6 @@ const Login = () => {
             <title>TECHMED | Login</title>
           </Helmet>
       <div className="h-screen flex justify-evenly items-center max-w-7xl mx-auto">
-        {/* <div className="">
-          <img src={loginImg} alt="" />
-        </div> */}
         <div className="card shadow-2xl glass w-1/2">
           <h2 className="text-center text-3xl font-bold mt-10">TECHMED | LOGIN</h2>
           <form onSubmit={handleLogin} className="card-body">
@@ -98,21 +97,7 @@ const Login = () => {
                 className="input input-bordered"
               />
             </div>
-            {/* <div className="form-control">
-              <label className="label">
-                <LoadCanvasTemplate />
-              </label>
-              <input
-                onBlur={handleValidateCaptcha}
-                type="text"
-                placeholder="type captcha"
-                name="captcha"
-                className="input input-bordered"
-              />
-              <button className="btn btn-outline btn-xs mt-4">
-                Validate Captcha
-              </button>
-            </div> */}
+            
             <div className="form-control mt-6">
               <input
                 className="btn bg-cyan-400 btn-block border-none"

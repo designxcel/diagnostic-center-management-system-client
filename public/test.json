@@ -2,282 +2,402 @@
     {
         "test": 1,
         "name": "Blood Drawing",
-        "price": "600 BDT",
+        "price": 600 ,
         "category": "Blood Bank",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 2,
         "name": "Blood Screening+Drawing+Grouping",
-        "price": "2100 BDT",
+        "price": 2100 ,
         "category": "Blood Bank",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Tue, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 3,
         "name": "Blood Screening+Grouping",
-        "price": "1500 BDT",
+        "price": 1500 ,
         "category": "Blood Bank",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sun, Sat, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 4,
         "name": "CLO Test (DFARUQUE)",
-        "price": "600 BDT",
+        "price": 600 ,
         "category": "COLONOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 5,
         "name": "Colonoscopy Polypectomy EMR/ESD Large (A)",
-        "price": "45000 BDT",
+        "price": 45000,
         "category": "COLONOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Tue, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 6,
         "name": "Colonoscopy Polypectomy EMR/ESD small (A)",
-        "price": "40000 BDT",
+        "price": 40000,
         "category": "COLONOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat,Sun, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 7,
         "name": "Colonoscopy Polypectomy Large (A)",
-        "price": "30000 BDT",
+        "price": 30000,
         "category": "COLONOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 8,
         "name": "Colonoscopy with Polypectomy (MRAHMAN)",
-        "price": "11000 BDT",
+        "price": 11000,
         "category": "COLONOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Tue, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 9,
         "name": "Foreign body removal (R)",
-        "price": "12000 BDT",
+        "price": 12000,
         "category": "COLONOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 10,
         "name": "Anesthesia",
-        "price": "1500 BDT",
+        "price": 1500 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "Modern Diagnostic Center"
+        "center": "Modern Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 11,
         "name": "Anesthesia for Banding",
-        "price": "1600 BDT",
+        "price": 1600 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "Modern Diagnostic Center"
+        "center": "Modern Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 12,
         "name": "Anesthesia for colonoscopy",
-        "price": "2000 BDT",
+        "price": 2000 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "Modern Diagnostic Center"
+        "center": "Modern Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 13,
         "name": "Anesthesia for Colonoscopy Full (A)",
-        "price": "1400 BDT",
+        "price": 1400 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "Modern Diagnostic Center"
+        "center": "Modern Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 14,
         "name": "Anesthesia for Endoscopy + Colonoscopy",
-        "price": "1800 BDT",
+        "price": 1800 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "Modern Diagnostic Center"
+        "center": "Modern Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 15,
         "name": "Anesthesia for Dilatation Balloon/Savary Gilliard (A)",
-        "price": "2100 BDT",
+        "price": 2100 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "Modern Diagnostic Center"
+        "center": "Modern Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 16,
         "name": "T.T Vax ( Tetanus )",
-        "price": "200 BDT",
+        "price": 200 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "Alok Diagnostic Center"
+        "center": "Alok Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 17,
         "name": "MRI Test Review Reporting Charge",
-        "price": "1300 BDT",
+        "price": 1300 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "Digilab Diagnostic Center"
+        "center": "Digilab Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 18,
         "name": "Physical Examination (Certificate)_200",
-        "price": "200 BDT",
+        "price": 200 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 19,
         "name": "Trephine Biopsy_Collection Charge",
-        "price": "2000 BDT",
+        "price": 2000 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "United Hospital"
+        "center": "United Hospital",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 20,
         "name": "CT / MRI Extra Film-6",
-        "price": "3000 BDT",
+        "price": 3000 ,
         "category": "DIAGNOSTIC CHARGES",
-        "center": "United Hospital"
+        "center": "United Hospital",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 21,
         "name": "Holter ECG 120hrs",
-        "price": "8000 BDT",
+        "price": 8000 ,
         "category": "ECG",
-        "center": "United Hospital"
+        "center": "United Hospital",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 22,
         "name": "Holter ECG 24hrs",
-        "price": "4000 BDT",
+        "price": 4000 ,
         "category": "ECG",
-        "center": "United Hospital"
+        "center": "United Hospital",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 23,
         "name": "Holter ECG 72hrs",
-        "price": "6000 BDT",
+        "price": 6000 ,
         "category": "ECG",
-        "center": "United Hospital"
+        "center": "United Hospital",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 24,
         "name": "Holter ECG 96hrs",
-        "price": "7000 BDT",
+        "price": 7000 ,
         "category": "ECG",
-        "center": "United Hospital"
+        "center": "United Hospital",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 25,
         "name": "24 Hrs Ambulatory BP",
-        "price": "4000 BDT",
+        "price": 4000 ,
         "category": "ECG",
-        "center": "Digilab Diagnostic Center"
+        "center": "Digilab Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 26,
         "name": "2D Echo",
-        "price": "2000 BDT",
+        "price": 2000 ,
         "category": "ECG",
-        "center": "Digilab Diagnostic Center"
+        "center": "Digilab Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 27,
         "name": "Anesthesia Charge for Echo/Echo Color Doppler",
-        "price": "1500 BDT",
+        "price": 1500 ,
         "category": "ECG",
-        "center": "Digilab Diagnostic Center"
+        "center": "Digilab Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 28,
         "name": "Anesthesia Charge for EEG",
-        "price": "1500 BDT",
+        "price": 1500 ,
         "category": "ECG",
-        "center": "Digilab Diagnostic Center"
+        "center": "Digilab Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 29,
         "name": "Bronco Dilator/Reversibility Test",
-        "price": "1800 BDT",
+        "price": 1800 ,
         "category": "ECG",
-        "center": "Digilab Diagnostic Center"
+        "center": "Digilab Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 30,
         "name": "Colour Doppler Echo CFM",
-        "price": "2600 BDT",
+        "price": 2600 ,
         "category": "ECG",
-        "center": "Digilab Diagnostic Center"
+        "center": "Digilab Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 31,
         "name": "Balloon Dilatation of Duodenum (A)",
-        "price": "26000 BDT",
+        "price": 26000,
         "category": "ENDOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 32,
         "name": "Balloon Dilatation of Duodenum (DAROB)",
-        "price": "10000 BDT",
+        "price": 10000,
         "category": "ENDOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 33,
         "name": "Balloon Dilatation of Duodenum (DDEWAN)",
-        "price": "10000 BDT",
+        "price": 10000,
         "category": "ENDOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 34,
         "name": "Bronchoscopy",
-        "price": "6000 BDT",
+        "price": 6000 ,
         "category": "ENDOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 35,
         "name": "Endoscopic Glue Injection of Fundal Varix (A)",
-        "price": "6000 BDT",
+        "price": 6000 ,
         "category": "ENDOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 36,
         "name": "Endoscopic Removal of Foreign body Fish Bone/Meat Bone (A)",
-        "price": "20000 BDT",
+        "price": 20000,
         "category": "ENDOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 37,
         "name": "Endoscopic Removal of Foreign body Fish Bone/Meat Bone (R)",
-        "price": "20000 BDT",
+        "price": 20000,
         "category": "ENDOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 38,
         "name": "Endoscopy Polypectomy Large (A)",
-        "price": "30000 BDT",
+        "price": 30000,
         "category": "ENDOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 39,
         "name": "ERCP & Papilotomy (DAROB)",
-        "price": "18000 BDT",
+        "price": 18000,
         "category": "ENDOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "test": 40,
         "name": "ERCP & Stenting (DMIAN)",
-        "price": "27000 BDT",
+        "price": 27000,
         "category": "ENDOSCOPY",
-        "center": "Popular Diagnostic Center"
+        "center": "Popular Diagnostic Center",
+        "time":"10am - 7pm",
+        "availibility":"Sat, Mon, Wed, Fri",
+        "details": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     }
 
 ]

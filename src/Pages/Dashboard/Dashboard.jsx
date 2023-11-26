@@ -1,12 +1,14 @@
 import { Helmet } from "react-helmet-async";
-import { FaBook, FaCalendar, FaDochub, FaHome, FaList, FaPhone, FaPhoneAlt, FaUsers } from "react-icons/fa";
+import { FaBook, FaCalendar, FaCartPlus, FaDochub, FaHome, FaList, FaPhone, FaPhoneAlt, FaUsers } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 import UseAdmin from "../../Hooks/UseAdmin";
+import UseCart from "../../Hooks/UseCart";
 
 
 const Dashboard = () => {
-    const isAdmin = true;
+    const isAdmin = false;
     // const [isAdmin] = UseAdmin();
+    const [cart] = UseCart()
     return (
         <div className="flex">
             <Helmet>
@@ -45,6 +47,9 @@ const Dashboard = () => {
 
                         <li>
                             <NavLink to="/dashboard/payment"><FaList></FaList>Test Result</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/dashboard/cart"><FaCartPlus></FaCartPlus>Cart ({cart.length})</NavLink>
                         </li>
 
                         {/* <li>

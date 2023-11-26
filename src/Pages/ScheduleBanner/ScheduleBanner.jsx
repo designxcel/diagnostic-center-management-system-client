@@ -63,7 +63,7 @@ const ScheduleBanner = () => {
                             centers.map(center =>
                                 <div key={center._id} className="card w-96 bg-base-100 shadow-md">
                                 <figure className="px-10 pt-10">
-                                    <img src={center.image} alt="Shoes" className="rounded-xl h-48" />
+                                    <img src={center.image} alt="Lab" className="rounded-xl h-48" />
                                 </figure>
                                 <div className="card-body items-center text-center">
                                     <h2 className="card-title">{center.name}</h2>
