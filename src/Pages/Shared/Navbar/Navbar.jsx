@@ -10,37 +10,45 @@ const Navbar = () => {
       .then(() => {})
       .catch((error) => console.log(error));
   };
+
   const menus = (
     <>
       <li>
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/">menu1</Link>
-      </li>
-      <li>
-        <Link to="/dashboard">menu2</Link>
+        <Link to="/test">All Test</Link>
       </li>
       <li>
         <Link to="/menu">menu3</Link>
       </li>
-      <li>
-        <Link to="/login">Login</Link>
-      </li>
+      {user ?  
+        <>
+          <li>
+              <Link to="/dashboard">Dashboard</Link>
+          </li>
+          <li>
+              <p onClick={handleLogOut}>Logout</p>
+          </li>
+        </>
+        : 
+        <li>
+          <Link to="/login">Login</Link>
+        </li>}
 
-      {/* {user ? (
+      {/* {user ? 
         <>
           <li>
             <p onClick={handleLogOut}>Logout</p>
           </li>
         </>
-      ) : (
+       : 
         <>
           <li>
             <Link to="/login">Login</Link>
           </li>
         </>
-      )} */}
+      } */}
     </>
   );
   return (
@@ -78,7 +86,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{menus}</ul>
       </div>
       <div className="navbar-end">
-        <button>profile</button>
+        {/* <button>profile</button> */}
         {/* <div className="mr-4">
           <Link to="/dashboard/cart">
             <button className="btn">
@@ -87,7 +95,7 @@ const Navbar = () => {
             </button>
           </Link>
         </div> */}
-        {/* <p className="mr-5">{user?.displayName}</p>
+        <p className="mr-5 text-black">{user?.displayName}</p>
         <div className="avatar">
           <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
             {user ? (
@@ -100,7 +108,7 @@ const Navbar = () => {
               </>
             )}
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

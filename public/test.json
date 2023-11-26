@@ -1,0 +1,283 @@
+[
+    {
+        "test": 1,
+        "name": "Blood Drawing",
+        "price": "600 BDT",
+        "category": "Blood Bank",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 2,
+        "name": "Blood Screening+Drawing+Grouping",
+        "price": "2100 BDT",
+        "category": "Blood Bank",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 3,
+        "name": "Blood Screening+Grouping",
+        "price": "1500 BDT",
+        "category": "Blood Bank",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 4,
+        "name": "CLO Test (DFARUQUE)",
+        "price": "600 BDT",
+        "category": "COLONOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 5,
+        "name": "Colonoscopy Polypectomy EMR/ESD Large (A)",
+        "price": "45000 BDT",
+        "category": "COLONOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 6,
+        "name": "Colonoscopy Polypectomy EMR/ESD small (A)",
+        "price": "40000 BDT",
+        "category": "COLONOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 7,
+        "name": "Colonoscopy Polypectomy Large (A)",
+        "price": "30000 BDT",
+        "category": "COLONOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 8,
+        "name": "Colonoscopy with Polypectomy (MRAHMAN)",
+        "price": "11000 BDT",
+        "category": "COLONOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 9,
+        "name": "Foreign body removal (R)",
+        "price": "12000 BDT",
+        "category": "COLONOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 10,
+        "name": "Anesthesia",
+        "price": "1500 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "Modern Diagnostic Center"
+    },
+    {
+        "test": 11,
+        "name": "Anesthesia for Banding",
+        "price": "1600 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "Modern Diagnostic Center"
+    },
+    {
+        "test": 12,
+        "name": "Anesthesia for colonoscopy",
+        "price": "2000 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "Modern Diagnostic Center"
+    },
+    {
+        "test": 13,
+        "name": "Anesthesia for Colonoscopy Full (A)",
+        "price": "1400 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "Modern Diagnostic Center"
+    },
+    {
+        "test": 14,
+        "name": "Anesthesia for Endoscopy + Colonoscopy",
+        "price": "1800 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "Modern Diagnostic Center"
+    },
+    {
+        "test": 15,
+        "name": "Anesthesia for Dilatation Balloon/Savary Gilliard (A)",
+        "price": "2100 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "Modern Diagnostic Center"
+    },
+    {
+        "test": 16,
+        "name": "T.T Vax ( Tetanus )",
+        "price": "200 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "Alok Diagnostic Center"
+    },
+    {
+        "test": 17,
+        "name": "MRI Test Review Reporting Charge",
+        "price": "1300 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "Digilab Diagnostic Center"
+    },
+    {
+        "test": 18,
+        "name": "Physical Examination (Certificate)_200",
+        "price": "200 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 19,
+        "name": "Trephine Biopsy_Collection Charge",
+        "price": "2000 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "United Hospital"
+    },
+    {
+        "test": 20,
+        "name": "CT / MRI Extra Film-6",
+        "price": "3000 BDT",
+        "category": "DIAGNOSTIC CHARGES",
+        "center": "United Hospital"
+    },
+    {
+        "test": 21,
+        "name": "Holter ECG 120hrs",
+        "price": "8000 BDT",
+        "category": "ECG",
+        "center": "United Hospital"
+    },
+    {
+        "test": 22,
+        "name": "Holter ECG 24hrs",
+        "price": "4000 BDT",
+        "category": "ECG",
+        "center": "United Hospital"
+    },
+    {
+        "test": 23,
+        "name": "Holter ECG 72hrs",
+        "price": "6000 BDT",
+        "category": "ECG",
+        "center": "United Hospital"
+    },
+    {
+        "test": 24,
+        "name": "Holter ECG 96hrs",
+        "price": "7000 BDT",
+        "category": "ECG",
+        "center": "United Hospital"
+    },
+    {
+        "test": 25,
+        "name": "24 Hrs Ambulatory BP",
+        "price": "4000 BDT",
+        "category": "ECG",
+        "center": "Digilab Diagnostic Center"
+    },
+    {
+        "test": 26,
+        "name": "2D Echo",
+        "price": "2000 BDT",
+        "category": "ECG",
+        "center": "Digilab Diagnostic Center"
+    },
+    {
+        "test": 27,
+        "name": "Anesthesia Charge for Echo/Echo Color Doppler",
+        "price": "1500 BDT",
+        "category": "ECG",
+        "center": "Digilab Diagnostic Center"
+    },
+    {
+        "test": 28,
+        "name": "Anesthesia Charge for EEG",
+        "price": "1500 BDT",
+        "category": "ECG",
+        "center": "Digilab Diagnostic Center"
+    },
+    {
+        "test": 29,
+        "name": "Bronco Dilator/Reversibility Test",
+        "price": "1800 BDT",
+        "category": "ECG",
+        "center": "Digilab Diagnostic Center"
+    },
+    {
+        "test": 30,
+        "name": "Colour Doppler Echo CFM",
+        "price": "2600 BDT",
+        "category": "ECG",
+        "center": "Digilab Diagnostic Center"
+    },
+    {
+        "test": 31,
+        "name": "Balloon Dilatation of Duodenum (A)",
+        "price": "26000 BDT",
+        "category": "ENDOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 32,
+        "name": "Balloon Dilatation of Duodenum (DAROB)",
+        "price": "10000 BDT",
+        "category": "ENDOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 33,
+        "name": "Balloon Dilatation of Duodenum (DDEWAN)",
+        "price": "10000 BDT",
+        "category": "ENDOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 34,
+        "name": "Bronchoscopy",
+        "price": "6000 BDT",
+        "category": "ENDOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 35,
+        "name": "Endoscopic Glue Injection of Fundal Varix (A)",
+        "price": "6000 BDT",
+        "category": "ENDOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 36,
+        "name": "Endoscopic Removal of Foreign body Fish Bone/Meat Bone (A)",
+        "price": "20000 BDT",
+        "category": "ENDOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 37,
+        "name": "Endoscopic Removal of Foreign body Fish Bone/Meat Bone (R)",
+        "price": "20000 BDT",
+        "category": "ENDOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 38,
+        "name": "Endoscopy Polypectomy Large (A)",
+        "price": "30000 BDT",
+        "category": "ENDOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 39,
+        "name": "ERCP & Papilotomy (DAROB)",
+        "price": "18000 BDT",
+        "category": "ENDOSCOPY",
+        "center": "Popular Diagnostic Center"
+    },
+    {
+        "test": 40,
+        "name": "ERCP & Stenting (DMIAN)",
+        "price": "27000 BDT",
+        "category": "ENDOSCOPY",
+        "center": "Popular Diagnostic Center"
+    }
+
+]

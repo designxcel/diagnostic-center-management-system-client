@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import UseAxiosPublic from "../../../Hooks/UseAxiosPublic";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,6 +9,33 @@ import Swal from "sweetalert2";
 
 
 const Signup = () => {
+    const [districts, setDistricts] = useState([])
+    const [upazillas, setUpazillas] = useState([])
+    const [bloods, setBloods] = useState([])
+    useEffect(() => {
+        fetch('districts.json')
+        .then(res => res.json())
+        .then(data => {
+            setDistricts(data)
+        })
+    },[])
+
+    useEffect(() => {
+        fetch('upazillas.json')
+        .then(res => res.json())
+        .then(data => {
+            setUpazillas(data)
+        })
+    },[])
+
+    useEffect(() => {
+        fetch('blood.json')
+        .then(res => res.json())
+        .then(data => {
+            setBloods(data)
+        })
+    },[])
+
     const axiosPublic = UseAxiosPublic();
   const { createUser, updateUser, googleSignIn } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -32,10 +59,14 @@ const Signup = () => {
       const loggedUser = result.user;
       updateUser(data.name, data.photoURL)
         .then(() => {
-            console.log(loggedUser)
+            // console.log(loggedUser)
           const userInfo = {
             name: data.name,
-            email: data.email
+            email: data.email,
+            blood: data.blood,
+            district:data.district,
+            upazilla:data.upazilla,
+            avatar:data.photoURL
           }
 
           axiosPublic.post('/users', userInfo)
@@ -49,7 +80,7 @@ const Signup = () => {
                 showConfirmButton: false,
                 timer: 1500,
               });
-            //   navigate("/login");
+              navigate("/login");
             }
           })
           
@@ -118,6 +149,52 @@ const Signup = () => {
                 {errors.email && (
                   <span className="text-red-500 mt-2">Email is required</span>
                 )}
+              </div>
+
+              <div className="flex gap-4">
+                <div className="form-control">
+                    <label className="label">
+                    <span className="label-text">Blood Group</span>
+                    </label>
+                    <select {...register("blood")} className="select select-bordered w-full">
+                        <option  disabled selected>Select Your Blood Group</option>
+                            {
+                                bloods.map(blood =><option key={blood.id}>{blood.group}</option>)
+                            }
+                    </select>
+                    {errors.blood && (
+                    <span className="text-red-500 mt-2">Blood input is required</span>
+                    )}
+                </div>
+                <div className="form-control">
+                    <label className="label">
+                    <span className="label-text">District</span>
+                    </label>
+                    <select {...register("district")} className="select select-bordered w-full">
+                        <option  disabled selected>Select Your District</option>
+                            {
+                                districts.map(district =><option key={district.id}>{district.name}</option>)
+                            }
+                    </select>
+                    {errors.district && (
+                    <span className="text-red-500 mt-2">District input is required</span>
+                    )}
+                </div>
+
+                <div className="form-control">
+                    <label className="label">
+                    <span className="label-text">Upazilla</span>
+                    </label>
+                    <select {...register("upazilla")} className="select select-bordered w-full">
+                        <option  disabled selected>Select Your Upazilla</option>
+                            {
+                                upazillas.map(upazilla =><option key={upazilla.id}>{upazilla.name}</option>)
+                            }
+                    </select>
+                    {errors.district && (
+                    <span className="text-red-500 mt-2">District input is required</span>
+                    )}
+                </div>
               </div>
 
               <div className="form-control">

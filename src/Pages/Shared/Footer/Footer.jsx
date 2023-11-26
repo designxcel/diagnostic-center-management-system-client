@@ -29,8 +29,8 @@ const Footer = () => {
                 <h2 className="text-xl font-semibold uppercase mb-5">Web SHortCut</h2>
                 <div>
                     <ul>
-                        <li><Link>Home</Link></li>
-                        <li><Link>Home</Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/test">All Test</Link></li>
                         <li><Link>Home</Link></li>
                         <li><Link>Home</Link></li>
                     </ul>

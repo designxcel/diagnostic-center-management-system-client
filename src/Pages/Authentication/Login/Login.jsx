@@ -51,10 +51,7 @@ const Login = () => {
         Swal.fire({
           title: "Logged in!",
           text: "Successfully logged in.",
-          imageUrl: "https://i.ibb.co/ZTS831h/logo.png",
-          imageWidth: 100,
-          imageHeight: 100,
-          imageAlt: "Custom image",
+          text: "TECHMED",
         });
         navigate(from, { replace: true });
       })

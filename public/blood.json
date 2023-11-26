@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "group": "A RhD positive (A+)"
+    },
+    {
+        "id": 2,
+        "group": "A RhD negative (A-)"
+    },
+    {
+        "id": 3,
+        "group": "B RhD positive (B+)"
+    },
+    {
+        "id": 4,
+        "group": "B RhD negative (B-)"
+    },
+    {
+        "id": 5,
+        "group": "O RhD positive (O+)"
+    },
+    {
+        "id": 6,
+        "group": "O RhD negative (O-)"
+    },
+    {
+        "id": 7,
+        "group": "AB RhD positive (AB+)"
+    },
+    {
+        "id": 8,
+        "group": "AB RhD negative (AB-)"
+    }
+]
