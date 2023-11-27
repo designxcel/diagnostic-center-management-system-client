@@ -13,6 +13,11 @@ import AdminHome from "../Dashboard/AdminHome/AdminHome";
 import TestDetails from "../TestDetails/TestDetails";
 import Cart from "../Dashboard/Cart/Cart";
 import PrivateRoute from "../Routes/PrivateRoute"
+import DoctorsDetails from "../DoctorsDetails/DoctorsDetails";
+import Appointment from "../Dashboard/Appointment/Appointment";
+import TestResult from "../Dashboard/TestResult/TestResult";
+import Contact from "../Contact/Contact";
+import Newsletters from "../Dashboard/Newsletters/Newsletters";
 
 const Routes = createBrowserRouter([
     {
@@ -28,12 +33,21 @@ const Routes = createBrowserRouter([
                 element: <AllTest></AllTest>
             },
             {
+                path: "/contact",
+                element: <Contact></Contact>
+            },
+            {
                 path: "/login",
                 element: <Login></Login>
             },
             {
                 path: "/signup",
                 element: <Signup></Signup>
+            },
+            {
+                path: "/doctordetails/:id",
+                element: <DoctorsDetails></DoctorsDetails>,
+                loader: ({params}) => fetch(`http://localhost:5000/drlists/${params.id}`)
             },
             {
                 path: "/testdetails/:id",
@@ -54,6 +68,14 @@ const Routes = createBrowserRouter([
                 path: "cart",
                 element: <Cart></Cart>
             },
+            {
+                path: "appointment",
+                element: <Appointment></Appointment>
+            },
+            {
+                path: "testResult",
+                element: <TestResult></TestResult>
+            },
             //for admin dashboard
             {
                 path: "adminHome",
@@ -71,6 +93,10 @@ const Routes = createBrowserRouter([
             {
                 path: "addDoctor",
                 element: <AddDoctor></AddDoctor>
+            },
+            {
+                path: "newsletter",
+                element: <Newsletters></Newsletters>
             }
         ]
     }

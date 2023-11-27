@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import UseAxiosSecure from "../../../Hooks/UseAxiosSecure";
-import { useQuery } from "@tanstack/react-query";
 import UseAxiosPublic from "../../../Hooks/UseAxiosPublic";
 import Swal from "sweetalert2";
 
@@ -49,7 +48,6 @@ const AddDoctor = () => {
                         });
             }
         }
-        // console.log(res.data)
       };
     return (
         <div>

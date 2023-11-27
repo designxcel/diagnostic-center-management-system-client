@@ -5,7 +5,13 @@
         "name": "Dr. Md. Zahidul Islam",
         "degree":"MBBS, MS (Thoracic Surgery)",
         "specialist": "Chest & Thoracic Surgery Specialist",
-        "chamber": "National Institute of Diseases of the Chest & Hospital"
+        "chamber": "National Institute of Diseases of the Chest & Hospital",
+        "rating": 4,
+        "visit": 800,
+        "contact": "010 0000 0000",
+        "availability": "Sat, Sun, Tue",
+        "chamber_time": "6pm - 9pm",
+        "details":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "dr_id": 2,
@@ -13,7 +19,13 @@
         "name": "Dr. Syed Atiqullah",
         "degree":"MBBS (DMC), BCS (Health), FCPS (Medicine), MD (Cardiology)",
         "specialist": "Cardiology & Medicine Specialist",
-        "chamber": "National Institute of Cardiovascular Diseases & Hospital"
+        "chamber": "National Institute of Cardiovascular Diseases & Hospital",
+        "rating": 4,
+        "visit": 800,
+        "contact": "010 0000 0000",
+        "availability": "Sat, Sun, Tue",
+        "chamber_time": "6pm - 9pm",
+        "details":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "dr_id": 3,
@@ -21,7 +33,13 @@
         "name": "Dr. Syed Atiqullah",
         "degree":"MBBS (DMC), BCS (Health), FCPS (Medicine), MD (Cardiology)",
         "specialist": "Cardiology & Medicine Specialist",
-        "chamber": "National Institute of Cardiovascular Diseases & Hospital"
+        "chamber": "National Institute of Cardiovascular Diseases & Hospital",
+        "rating": 4,
+        "visit": 800,
+        "contact": "010 0000 0000",
+        "availability": "Sat, Sun, Tue",
+        "chamber_time": "6pm - 9pm",
+        "details":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "dr_id": 4,
@@ -29,7 +47,13 @@
         "name": "Prof. Dr. Md. Khoybar Ali",
         "degree":"MBBS, DCH, FCPS (CHILD)",
         "specialist": "Newborn, Adolescent & Child Diseases Specialist",
-        "chamber": "Ibn Sina Medical College & Hospital"
+        "chamber": "Ibn Sina Medical College & Hospital",
+        "rating": 4,
+        "visit": 800,
+        "contact": "010 0000 0000",
+        "availability": "Sat, Sun, Tue",
+        "chamber_time": "6pm - 9pm",
+        "details":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "dr_id": 5,
@@ -37,7 +61,13 @@
         "name": "Prof. Dr. Md. Khoybar Ali",
         "degree":"MBBS, DCH, FCPS (CHILD)",
         "specialist": "Newborn, Adolescent & Child Diseases Specialist",
-        "chamber": "Ibn Sina Medical College & Hospital"
+        "chamber": "Ibn Sina Medical College & Hospital",
+        "rating": 4,
+        "visit": 800,
+        "contact": "010 0000 0000",
+        "availability": "Sat, Sun, Tue",
+        "chamber_time": "6pm - 9pm",
+        "details":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         "dr_id": 6,
@@ -45,6 +75,12 @@
         "name": "Dr. Nahida Yeasmin",
         "degree":"MBBS, BCS (Health), FCPS (OBGYN)",
         "specialist": "Gynecology, Obstetrics Specialist & Surgeon",
-        "chamber": "Shaheed Suhrawardy Medical College & Hospital"
+        "chamber": "Shaheed Suhrawardy Medical College & Hospital",
+        "rating": 4,
+        "visit": 800,
+        "contact": "010 0000 0000",
+        "availability": "Sat, Sun, Tue",
+        "chamber_time": "6pm - 9pm",
+        "details":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     }
 ]

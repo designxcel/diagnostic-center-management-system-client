@@ -2,6 +2,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import UseAxiosPublic from '../../Hooks/UseAxiosPublic';
 import { useQuery } from '@tanstack/react-query';
+import { Link } from 'react-router-dom';
 
 const ScheduleBanner = () => {
     const axiosPublic = UseAxiosPublic()
@@ -44,7 +45,9 @@ const ScheduleBanner = () => {
                                     <p className="text-sm font-semibold">{doctor.specialist}</p>
                                     <p className="text-sm font-semibold">Chamber: {doctor.chamber}</p>
                                     <div className="card-actions justify-end">
-                                        <button className="btn bg-cyan-400 uppercase btn-block">Book Your Doctor</button>
+                                        <Link to={`/doctordetails/${doctor._id}`}>
+                                            <button className="btn border-4 border-l-cyan-400 uppercase btn-block">View Details</button>
+                                        </Link>
                                     </div>
                                 </div>
                                 </div>
