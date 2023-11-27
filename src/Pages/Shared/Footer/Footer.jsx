@@ -1,9 +1,40 @@
 import { FaFacebook, FaGoogle, FaInstagram, FaTelegram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Footer = () => {
+  const handleSubmit = e =>{
+    e.preventDefault();
+
+    const form = e.target;
+
+    const name = form.name.value;
+    const email = form.email.value;
+    const details = form.details.value;
+
+    const info = {name, email, details}
+
+    fetch('http://localhost:5000/contact', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body:JSON.stringify(info)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.insertedId){
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'NewsLetter sent Successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                  })
+            }
+        })
+}
   return (
-    <div className="bg-[#102035] text-white flex flex-col md:flex-row justify-evenly gap-8 text-center p-10">
+    <div className="bg-[#102035] text-white flex flex-col md:flex-row justify-evenly items-center gap-8 text-center p-10">
       <div className="w-1/3 space-y-4">
         <h2 className="text-2xl font-bold">TECHMED</h2>
         <p>
@@ -19,29 +50,35 @@ const Footer = () => {
           <FaTelegram></FaTelegram>
         </div>
       </div>
-      <div className="w-1/3">
+      <div className="w-1/3 text-black">
         <h2 className="text-xl font-semibold uppercase mb-5">Contact Form</h2>
-        <form className="space-y-2">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="input input-bordered input-accent w-full"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="input input-bordered input-accent w-full"
-          />
-          <textarea
-            className="textarea textarea-accent w-full"
-            placeholder="Your Message"
-          ></textarea>
-          <input
-            className="btn btn-accent text-white font-semibold text-xl"
-            type="button"
-            value="Submit"
-          />
-        </form>
+        <form onSubmit={handleSubmit}>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Name</span>
+                        </label>
+                        <input type="text" name="name" placeholder="name" className="textarea-accent input input-bordered" />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Email</span>
+                        </label>
+                        <input type="email" name="email" placeholder="email" className="textarea-accent input input-bordered" required />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Your Message</span>
+                        </label>
+                        <textarea
+                            className="textarea textarea-accent w-full"
+                            placeholder="Your Message"
+                            name="details"
+                        ></textarea>
+                    </div>
+                    <div className="form-control mt-10">
+                        <button className="btn btn-accent">Submit</button>
+                    </div>
+                </form>
       </div>
       <div className="w-1/3">
         <h2 className="text-xl font-semibold uppercase mb-5">Web SHortCut</h2>

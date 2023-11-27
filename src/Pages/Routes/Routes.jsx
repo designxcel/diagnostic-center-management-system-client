@@ -18,6 +18,7 @@ import Appointment from "../Dashboard/Appointment/Appointment";
 import TestResult from "../Dashboard/TestResult/TestResult";
 import Contact from "../Contact/Contact";
 import Newsletters from "../Dashboard/Newsletters/Newsletters";
+import AdminRoute from "./AdminRoute";
 
 const Routes = createBrowserRouter([
     {
@@ -46,7 +47,7 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "/doctordetails/:id",
-                element: <DoctorsDetails></DoctorsDetails>,
+                element: <PrivateRoute><DoctorsDetails></DoctorsDetails></PrivateRoute>,
                 loader: ({params}) => fetch(`http://localhost:5000/drlists/${params.id}`)
             },
             {
@@ -58,7 +59,7 @@ const Routes = createBrowserRouter([
     },
     {
         path: "dashboard",
-        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+        element: <AdminRoute><Dashboard></Dashboard></AdminRoute>,
         children: [
             {
                 path: "userProfile",
@@ -83,16 +84,16 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "allUsers",
-                element: <AllUsers></AllUsers>
+                element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
             },
             {
                 path: "doctorsList",
-                element: <DoctorList></DoctorList>
+                element: <AdminRoute><DoctorList></DoctorList></AdminRoute>
 
             },
             {
                 path: "addDoctor",
-                element: <AddDoctor></AddDoctor>
+                element: <AdminRoute><AddDoctor></AddDoctor></AdminRoute>
             },
             {
                 path: "newsletter",
