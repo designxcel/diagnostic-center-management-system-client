@@ -100,6 +100,11 @@ const Signup = () => {
           </div> */}
           <div className="card glass w-1/2">
             <h2 className="text-center text-3xl font-bold mt-10">TECHMED | SIGNUP</h2>
+            <p className='font-bold underline text-gray-400 text-center'>
+            <Link to ="/">
+              Go Home
+            </Link>
+          </p>
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <label className="label">

@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { FaBook, FaCalendar, FaCartPlus, FaDochub, FaHome, FaList, FaNewspaper, FaPhone, FaPhoneAlt, FaUsers } from "react-icons/fa";
+import { FaBook, FaCalendar, FaCartPlus, FaDochub, FaHome, FaList, FaNewspaper, FaPhone, FaUsers } from "react-icons/fa";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import UseAdmin from "../../Hooks/UseAdmin";
 import UseCart from "../../Hooks/UseCart";
@@ -14,7 +14,7 @@ const Dashboard = () => {
     const [isAdmin] = UseAdmin()
     const [cart] = UseCart()
     const [booking] = UseBooking()
-    const noWelcomeNoteCart =  location.pathname.includes('dashboard/cart') || location.pathname.includes('dashboard/userProfile') || location.pathname.includes('dashboard/appointment') || location.pathname.includes('dashboard/testResult') || location.pathname.includes('dashboard/adminHome') || location.pathname.includes('dashboard/addDoctor') || location.pathname.includes('dashboard/doctorsList') || location.pathname.includes('dashboard/manageDoctors') || location.pathname.includes('dashboard/allUsers') || location.pathname.includes('dashboard/newsletter')
+    const noWelcomeNoteCart =  location.pathname.includes('dashboard/cart') || location.pathname.includes('dashboard/userProfile') || location.pathname.includes('dashboard/appointment') || location.pathname.includes('dashboard/testResult') || location.pathname.includes('dashboard/adminHome') || location.pathname.includes('dashboard/addDoctor') || location.pathname.includes('dashboard/doctorsList') || location.pathname.includes('dashboard/manageDoctors') || location.pathname.includes('dashboard/allUsers') || location.pathname.includes('dashboard/newsletter') || location.pathname.includes('dashboard/payment')
     return (
         <div className="flex">
             <Helmet>

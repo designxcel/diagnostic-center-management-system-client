@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FaCartPlus } from "react-icons/fa";
@@ -89,6 +89,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{menus}</ul>
       </div>
       <div className="navbar-end">
+        
         <div className="mr-4">
           {user? <Link to="/dashboard/cart">
             <button className="flex gap-4 items-center bg-cyan-400 px-4 py-2 rounded-lg">

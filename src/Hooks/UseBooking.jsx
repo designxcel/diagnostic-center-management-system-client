@@ -9,7 +9,7 @@ const UseBooking = () => {
     const { data: booking = [], refetch} = useQuery({
         queryKey: ["booking", user?.email],
         queryFn: async () => {
-          const res = await axiosSecure.get(`/drlists?email=${user.email}`);
+          const res = await axiosSecure.get(`/drbooking?email=${user.email}`);
           return res.data;
         },
       });

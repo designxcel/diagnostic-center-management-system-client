@@ -21,7 +21,7 @@ const Testimonial = () => {
     },
   });
     return (
-        <div className='p-20'>
+        <div className='p-20 mt-10'>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
             {
                 reviews.map(review =><SwiperSlide className="px-20 space-y-6" key={review._id}>

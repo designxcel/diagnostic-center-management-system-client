@@ -2,10 +2,39 @@ import React from 'react';
 import UseBooking from '../../../Hooks/UseBooking';
 import { Helmet } from 'react-helmet-async';
 import { FaTrash } from 'react-icons/fa';
+import Swal from 'sweetalert2';
+import UseAxiosSecure from '../../../Hooks/UseAxiosSecure';
 
 const Appointment = () => {
-    const [booking] = UseBooking()
+    const [booking, refetch] = UseBooking()
+    const axiosSecure = UseAxiosSecure()
     const totalPrice = booking.reduce((total, item) => total + item.visit, 0)
+    const handleDelete = id =>{
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+                axiosSecure.delete(`/drbooking/${id}`)
+                .then(res => {
+                    if(res.data.deletedCount > 0){
+                        Swal.fire({
+                            title: "Deleted!",
+                            text: "Your file has been deleted.",
+                            icon: "success"
+                          });
+                          refetch()
+                    }
+                })
+            
+            }
+          });
+    }
     return (
         <div>
             <Helmet>
@@ -31,6 +60,7 @@ const Appointment = () => {
                         <th>Contact</th>
                         <th>Chamber Time</th>
                         <th>Status</th>
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -45,7 +75,12 @@ const Appointment = () => {
                                 <td>{item.chamber_time}</td>
                                 <td>
                                     <div className='text-red-700'>
-                                    <button>Upcoming</button>
+                                    <button>Pending</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className='text-red-700'>
+                                    <button onClick={() => handleDelete(item._id)}><FaTrash></FaTrash></button>
                                     </div>
                                 </td>
                             </tr>

@@ -19,6 +19,7 @@ import TestResult from "../Dashboard/TestResult/TestResult";
 import Contact from "../Contact/Contact";
 import Newsletters from "../Dashboard/Newsletters/Newsletters";
 import AdminRoute from "./AdminRoute";
+import Payment from "../Dashboard/Payment/Payment";
 
 const Routes = createBrowserRouter([
     {
@@ -59,11 +60,15 @@ const Routes = createBrowserRouter([
     },
     {
         path: "dashboard",
-        element: <AdminRoute><Dashboard></Dashboard></AdminRoute>,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children: [
             {
                 path: "userProfile",
                 element: <UserProfile></UserProfile>
+            },
+            {
+                path: "payment",
+                element: <Payment></Payment>
             },
             {
                 path: "cart",

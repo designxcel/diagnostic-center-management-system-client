@@ -3,6 +3,7 @@ import UseCart from "../../../Hooks/UseCart";
 import { FaTrash } from "react-icons/fa";
 import Swal from "sweetalert2";
 import UseAxiosSecure from "../../../Hooks/UseAxiosSecure";
+import { Link } from "react-router-dom";
 
 
 const Cart = () => {
@@ -77,7 +78,12 @@ const Cart = () => {
                 
             </table>
             <div className="flex justify-end mt-10">
-                <button className="btn bg-cyan-400">Pay</button>
+                {cart.length ? <Link to="/dashboard/payment">
+                    <button className="btn bg-cyan-400">Pay</button>
+                </Link> :
+                <button disabled className="btn bg-cyan-400">Pay</button>
+                
+                }
              </div>
             </div>
             </div>

@@ -74,6 +74,11 @@ const Login = () => {
       <div className="h-screen flex justify-evenly items-center max-w-7xl mx-auto">
         <div className="card shadow-2xl glass w-1/2">
           <h2 className="text-center text-3xl font-bold mt-10">TECHMED | LOGIN</h2>
+          <p className='font-bold underline text-gray-400 text-center'>
+            <Link to ="/">
+              Go Home
+            </Link>
+          </p>
           <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
               <label className="label">
