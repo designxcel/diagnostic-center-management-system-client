@@ -34,7 +34,6 @@ const AllTest = () => {
                 <th>Diagnostic Center</th>
                 <th>Price</th>
                 <th>Details</th>
-                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -51,7 +50,6 @@ const AllTest = () => {
                                 <button><FaEye></FaEye></button>
                               </Link>
                             </td>
-                            <td><FaArrowRight></FaArrowRight></td>
                             </tr>
                         )
                 }

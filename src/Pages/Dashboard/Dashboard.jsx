@@ -3,24 +3,31 @@ import { FaBook, FaCalendar, FaCartPlus, FaDochub, FaHome, FaList, FaPhone, FaPh
 import { NavLink, Outlet } from "react-router-dom";
 import UseAdmin from "../../Hooks/UseAdmin";
 import UseCart from "../../Hooks/UseCart";
+import dashboardLogo from "../../assets/logo/mainLogo.png"
+import DashboardHome from "../../components/DashboardHome/DashboardHome";
 
 
 const Dashboard = () => {
-    const isAdmin = false;
-    // const [isAdmin] = UseAdmin();
+    // const isAdmin = true;
+    const [isAdmin] = UseAdmin()
     const [cart] = UseCart()
     return (
         <div className="flex">
             <Helmet>
                 <title>TECHMED | Dashboard</title>
             </Helmet>
-            <div className="w-72 bg-orange-400 min-h-screen">
+            <div className="w-72 bg-gradient-to-b from-[#9fccfa] to-[#0974f1] min-h-screen">
+                <div>
+                    <img src={dashboardLogo} alt="" />
+                </div>
                 <ul className="menu p-4 space-y-4">
                     {
                         isAdmin ? 
                         <>
                             <li>
-                                <NavLink to="/dashboard/adminHome"><FaHome></FaHome>Admin Home</NavLink>
+                                <NavLink 
+                                 to="/dashboard/adminHome"
+                                 ><FaHome></FaHome>Admin Home</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/dashboard/addDoctor"><FaDochub></FaDochub>Add Doctor</NavLink>
@@ -77,6 +84,7 @@ const Dashboard = () => {
             </div>
 
             <div className="flex-1 p-10">
+                <DashboardHome></DashboardHome>
                 <Outlet></Outlet>
             </div>
         </div>

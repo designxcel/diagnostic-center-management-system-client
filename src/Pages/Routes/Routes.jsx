@@ -12,6 +12,7 @@ import AddDoctor from "../Dashboard/AddDoctor/AddDoctor";
 import AdminHome from "../Dashboard/AdminHome/AdminHome";
 import TestDetails from "../TestDetails/TestDetails";
 import Cart from "../Dashboard/Cart/Cart";
+import PrivateRoute from "../Routes/PrivateRoute"
 
 const Routes = createBrowserRouter([
     {
@@ -36,14 +37,14 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "/testdetails/:id",
-                element: <TestDetails></TestDetails>,
+                element: <PrivateRoute><TestDetails></TestDetails></PrivateRoute>,
                 loader: ({params})=> fetch(`http://localhost:5000/test/${params.id}`)
             }
         ]
     },
     {
         path: "dashboard",
-        element: <Dashboard></Dashboard>,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children: [
             {
                 path: "userProfile",

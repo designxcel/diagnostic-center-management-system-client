@@ -90,12 +90,12 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <div className="mr-4">
-          <Link to="/dashboard/cart">
-            <button className="btn">
-              <FaCartPlus className="text-2xl"></FaCartPlus>
-              <div className="badge badge-accent">+{cart.length}</div>
+          {user? <Link to="/dashboard/cart">
+            <button className="flex gap-4 items-center bg-cyan-400 px-4 py-2 rounded-lg">
+              <FaCartPlus className="text-2xl text-white"></FaCartPlus>
+              <div className="badge badge-ghost">+{cart.length}</div>
             </button>
-          </Link>
+          </Link> : ''}
         </div>
         <p className="mr-5 text-black">{user?.displayName}</p>
         <div className="avatar">

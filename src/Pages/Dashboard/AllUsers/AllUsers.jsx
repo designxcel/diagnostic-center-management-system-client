@@ -47,6 +47,7 @@ const AllUsers = () => {
             axiosSecure.delete(`/users/${user._id}`)
             .then(res =>{
                 if(res.data.deletedCount > 0){
+                    refetch()
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
@@ -54,7 +55,7 @@ const AllUsers = () => {
                         showConfirmButton: false,
                         timer: 1500
                       });
-                      refetch()
+                      
                 }
             })
             }
@@ -85,7 +86,7 @@ const AllUsers = () => {
                             <tbody>
                             {
                                 users.map((user, index) => 
-                                    <tr>
+                                    <tr key={user._id}>
                                         <th>{index + 1}</th>
                                         <th>
                                             <div className="avatar">
@@ -98,7 +99,7 @@ const AllUsers = () => {
                                         <td>{user.email}</td>
                                         <td>
                                             {
-                                                user.role === 'admin' ? 'Admin' : <button onClick={() => handleMakeAdmin(user)}>Not Admin</button>
+                                                user.role === 'admin' ? 'Admin' : <button onClick={() => handleMakeAdmin(user)}>User</button>
                                             }
                                         </td>
                                         <td className="text-red-700" alt="Delete">

@@ -86,7 +86,7 @@ const TestDetails = () => {
                     <p className='text-xl font-bold'>Category of Test: {category}</p>
                 </div>
             </div>
-            <button onClick={handleAddToCart} className='btn bg-cyan-400 btn-block mb-20'>Book Your Test</button>
+                <button onClick={handleAddToCart} className='btn bg-cyan-400 btn-block mb-20'>Book Your Test</button>
             </div>
         </div>
     ); 
