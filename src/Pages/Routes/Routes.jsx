@@ -50,12 +50,12 @@ const Routes = createBrowserRouter([
             {
                 path: "/doctordetails/:id",
                 element: <PrivateRoute><DoctorsDetails></DoctorsDetails></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/drlists/${params.id}`)
+                loader: ({params}) => fetch(`https://diagnostic-center-management-system-server.vercel.app/drlists/${params.id}`)
             },
             {
                 path: "/testdetails/:id",
                 element: <PrivateRoute><TestDetails></TestDetails></PrivateRoute>,
-                loader: ({params})=> fetch(`http://localhost:5000/test/${params.id}`)
+                loader: ({params})=> fetch(`https://diagnostic-center-management-system-server.vercel.app/test/${params.id}`)
             }
         ]
     },
