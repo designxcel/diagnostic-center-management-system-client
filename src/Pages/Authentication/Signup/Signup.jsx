@@ -98,8 +98,8 @@ const Signup = () => {
           {/* <div className="w-1/2">
             <img className="rounded-lg" src={teamImg} alt="" />
           </div> */}
-          <div className="card glass w-1/2">
-            <h2 className="text-center text-3xl font-bold mt-10">TECHMED | SIGNUP</h2>
+          <div className="card glass md:w-1/2">
+            <h2 className="text-center text-3xl font-bold mt-12">TECHMED | SIGNUP</h2>
             <p className='font-bold underline text-gray-400 text-center'>
             <Link to ="/">
               Go Home

@@ -75,8 +75,8 @@ const AddDoctor = () => {
                         <span className="text-red-500 mt-2">Name is required</span>
                         )}
                     </div>
-                    <div className="flex gap-4">
-                        <div className="form-control w-1/3">
+                    <div className="flex  flex-col md:flex-row gap-4">
+                        <div className="form-control md:w-1/3">
                             <label className="label">
                             <span className="label-text">Doctor Degree</span>
                             </label>
@@ -91,7 +91,7 @@ const AddDoctor = () => {
                             <span className="text-red-500 mt-2">Degree is required</span>
                             )}
                         </div>
-                        <div className="form-control w-1/3">
+                        <div className="form-control md:w-1/3">
                             <label className="label">
                             <span className="label-text">Doctor Speciality</span>
                             </label>
@@ -106,7 +106,7 @@ const AddDoctor = () => {
                             <span className="text-red-500 mt-2">Speciality is required</span>
                             )}
                         </div>
-                        <div className="form-control w-1/3">
+                        <div className="form-control md:w-1/3">
                                     <label className="label">
                                     <span className="label-text">Doctor Image</span>
                                     </label>
@@ -118,7 +118,7 @@ const AddDoctor = () => {
                             </div>
                     </div>
                    
-                    <div className="flex gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <div className="form-control w-full">
                             <label className="label">
                             <span className="label-text">Doctor Chamber</span>

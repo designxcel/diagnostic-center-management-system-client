@@ -35,7 +35,7 @@ const Footer = () => {
 }
   return (
     <div className="bg-[#102035] text-white flex flex-col md:flex-row justify-evenly items-center gap-8 text-center p-10">
-      <div className="w-1/3 space-y-4">
+      <div className="md:w-1/3 space-y-4">
         <h2 className="text-2xl font-bold">TECHMED</h2>
         <p>
           Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -50,8 +50,8 @@ const Footer = () => {
           <FaTelegram></FaTelegram>
         </div>
       </div>
-      <div className="w-1/3 text-black">
-        <h2 className="text-xl font-semibold uppercase mb-5">Contact Form</h2>
+      <div className="md:w-1/3 text-black">
+        <h2 className="text-xl text-white font-semibold uppercase mb-5">Contact Form</h2>
         <form onSubmit={handleSubmit}>
                     <div className="form-control">
                         <label className="label">
@@ -80,7 +80,7 @@ const Footer = () => {
                     </div>
                 </form>
       </div>
-      <div className="w-1/3">
+      <div className="md:w-1/3">
         <h2 className="text-xl font-semibold uppercase mb-5">Web SHortCut</h2>
         <div>
           <ul>

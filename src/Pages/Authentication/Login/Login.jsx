@@ -71,8 +71,8 @@ const Login = () => {
           <Helmet>
             <title>TECHMED | Login</title>
           </Helmet>
-      <div className="h-screen flex justify-evenly items-center max-w-7xl mx-auto">
-        <div className="card shadow-2xl glass w-1/2">
+      <div className="min-h-screen flex justify-evenly items-center max-w-7xl mx-auto">
+        <div className="card shadow-2xl glass md:w-1/2">
           <h2 className="text-center text-3xl font-bold mt-10">TECHMED | LOGIN</h2>
           <p className='font-bold underline text-gray-400 text-center'>
             <Link to ="/">

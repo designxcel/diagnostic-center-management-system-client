@@ -16,11 +16,11 @@ const Dashboard = () => {
     const [booking] = UseBooking()
     const noWelcomeNoteCart =  location.pathname.includes('dashboard/cart') || location.pathname.includes('dashboard/userProfile') || location.pathname.includes('dashboard/appointment') || location.pathname.includes('dashboard/testResult') || location.pathname.includes('dashboard/adminHome') || location.pathname.includes('dashboard/addDoctor') || location.pathname.includes('dashboard/doctorsList') || location.pathname.includes('dashboard/manageDoctors') || location.pathname.includes('dashboard/allUsers') || location.pathname.includes('dashboard/newsletter') || location.pathname.includes('dashboard/payment')
     return (
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
             <Helmet>
                 <title>TECHMED | Dashboard</title>
             </Helmet>
-            <div className="w-72 bg-gradient-to-b from-[#9fccfa] to-[#0974f1] min-h-screen">
+            <div className="w-72 bg-gradient-to-b from-[#9fccfa] to-[#0974f1] min-h-screen mx-auto">
                 <div className="p-4 m-10">
                     <img src={dashboardLogo} alt="" />
                 </div>
@@ -39,9 +39,9 @@ const Dashboard = () => {
                             <li>
                                 <NavLink to="/dashboard/doctorsList"><FaList></FaList>Doctors List</NavLink>
                             </li>
-                            <li>
+                            {/* <li>
                                 <NavLink to="/dashboard/manageDoctors"><FaBook></FaBook>Manage Doctors</NavLink>
-                            </li>
+                            </li> */}
                             <li>
                                 <NavLink to="/dashboard/allUsers"><FaUsers></FaUsers>All Users</NavLink>
                             </li>

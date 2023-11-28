@@ -11,7 +11,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Slider = () => {
     return (
-        <div>
+        <div className='mt-28'>
             <Swiper
                 className='relative group'
                 modules={[Navigation, Autoplay]}

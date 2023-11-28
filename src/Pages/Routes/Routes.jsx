@@ -90,7 +90,7 @@ const Routes = createBrowserRouter([
             //for admin dashboard
             {
                 path: "adminHome",
-                element: <AdminHome></AdminHome>
+                element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
             },
             {
                 path: "allUsers",

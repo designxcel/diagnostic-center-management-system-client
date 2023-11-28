@@ -4,6 +4,8 @@ import Blogs from "../Blogs/Blogs";
 import ScheduleBanner from "../ScheduleBanner/ScheduleBanner";
 import Counter from "../Counter/Counter";
 import Testimonial from "../Testimonial/Testimonial";
+import Services from "../Services/Services";
+import ExtraBanner from "../ExtraBanner/ExtraBanner";
 
 
 const Home = () => {
@@ -16,7 +18,9 @@ const Home = () => {
             <ScheduleBanner></ScheduleBanner>
             <Blogs></Blogs>
             <Counter></Counter>
+            <Services></Services>
             <Testimonial></Testimonial>
+            <ExtraBanner></ExtraBanner>
             
         </div>
     );
