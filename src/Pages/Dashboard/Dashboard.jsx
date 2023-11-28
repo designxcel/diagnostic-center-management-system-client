@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { FaBook, FaCalendar, FaCartPlus, FaDochub, FaHome, FaList, FaNewspaper, FaPhone, FaUsers } from "react-icons/fa";
+import { FaBook, FaCalendar, FaCartPlus, FaDochub, FaDollarSign, FaHome, FaList, FaNewspaper, FaPhone, FaUsers } from "react-icons/fa";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import UseAdmin from "../../Hooks/UseAdmin";
 import UseCart from "../../Hooks/UseCart";
@@ -64,6 +64,9 @@ const Dashboard = () => {
                         </li>
                         <li>
                             <NavLink to="/dashboard/cart"><FaCartPlus></FaCartPlus>Cart ({cart.length})</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/dashboard/paymentHistory"><FaDollarSign></FaDollarSign>History of Payment</NavLink>
                         </li>
 
                         {/* <li>

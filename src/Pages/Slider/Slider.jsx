@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import slider1 from "../../assets/slider/slide1.jpg"
 import slider2 from "../../assets/slider/slide2.jpg"
 import slider3 from "../../assets/slider/slide3.jpg"
@@ -14,13 +14,13 @@ const Slider = () => {
         <div>
             <Swiper
                 className='relative group'
-                modules={[Navigation]}
+                modules={[Navigation, Autoplay]}
                 spaceBetween={50}
                 slidesPerView={1}
-                // autoplay={{
-                //     delay: 2500,
-                //     disableOnInteraction: false,
-                //   }}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
                 navigation ={{
                     nextEl:".button-next-slide",
                     prevEl:".button-prev-slide",

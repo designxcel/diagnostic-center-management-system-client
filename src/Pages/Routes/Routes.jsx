@@ -20,6 +20,7 @@ import Contact from "../Contact/Contact";
 import Newsletters from "../Dashboard/Newsletters/Newsletters";
 import AdminRoute from "./AdminRoute";
 import Payment from "../Dashboard/Payment/Payment";
+import PaymentHistory from "../Dashboard/PaymentHistory/PaymentHistory";
 
 const Routes = createBrowserRouter([
     {
@@ -81,6 +82,10 @@ const Routes = createBrowserRouter([
             {
                 path: "testResult",
                 element: <TestResult></TestResult>
+            },
+            {
+                path: "paymentHistory",
+                element: <PaymentHistory></PaymentHistory>
             },
             //for admin dashboard
             {

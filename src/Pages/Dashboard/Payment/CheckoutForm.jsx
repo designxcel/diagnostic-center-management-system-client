@@ -4,6 +4,7 @@ import UseAxiosSecure from "../../../Hooks/UseAxiosSecure";
 import UseCart from "../../../Hooks/UseCart";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 
 const CheckoutForm = () => {
@@ -15,6 +16,7 @@ const CheckoutForm = () => {
     const axiosSecure = UseAxiosSecure()
     const [cart, refetch] = UseCart()
     const {user} = useContext(AuthContext)
+    const navigate = useNavigate()
     const totalPrice = cart.reduce((total, item) => total + item.price, 0)
 
     useEffect(() =>{
@@ -89,12 +91,17 @@ const CheckoutForm = () => {
                         showConfirmButton: false,
                         timer: 1500
                       });
+                      navigate('/dashboard/paymentHistory')
                 }
             }
         }
     }
     return (
         <div>
+            <div className="">
+                <h2 className="uppercase text-5xl font-bold text-center mt-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Payment</h2>
+                <div className="divider max-w-7xl mx-auto"></div>
+            </div>
             <form onSubmit={handleSubmit}>
             <CardElement
                     options={{
