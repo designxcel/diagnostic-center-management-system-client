@@ -1,47 +1,72 @@
 
 import { Helmet } from "react-helmet-async";
-import UseAxiosPublic from "../../Hooks/UseAxiosPublic";
-import { useQuery } from "@tanstack/react-query";
+// import UseAxiosPublic from "../../Hooks/UseAxiosPublic";
+// import { useQuery } from "@tanstack/react-query";
 import { FaEye } from "react-icons/fa";
-import { Link} from "react-router-dom";
+import { Link, useLoaderData} from "react-router-dom";
+import { useEffect, useState } from "react";
+import './AllTest.css'
 
 const AllTest = () => {
-  const axiosPublic = UseAxiosPublic();
-  // const [currentPage, setCurrentPage] = useState(0)
-  // const [testPerPage, setTestPerPage] = useState(10)
-  // const {count} = useLoaderData()
-  // const numberOfPage = Math.ceil(count / testPerPage)
+  const [totalTest, setTotalTest] = useState([])
+  // const axiosPublic = UseAxiosPublic();
+  const [currentPage, setCurrentPage] = useState(0)
+  const [testPerPage, setTestPerPage] = useState(10)
 
-  // const pages = [...Array(numberOfPage).keys()]
+  const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const {count} = useLoaderData()
+  const numberOfPage = Math.ceil(count / testPerPage)
+
+  const pages = [...Array(numberOfPage).keys()]
 
   
+  useEffect(() => {
+    setLoading(true)
+    fetch(`http://localhost:5000/test?page=${currentPage}&size=${testPerPage}&search=${searchQuery}`)
+    .then(res => res.json())
+    .then(data => {
+      setTotalTest(data)
+      setLoading(false)
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+      setLoading(false);
+    });
+  },[currentPage, testPerPage, searchQuery])
 
-  const { data: tests = [] } = useQuery({
-    queryKey: ["tests"],
-    queryFn: async () => {
-      const res = await axiosPublic.get('/test');
-      return res.data;
-    },
-  });
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
+    setCurrentPage(0); 
+  };
 
-  // const handleTestPerPage = e =>{
-  //   const value = parseInt(e.target.value)
-  //   console.log(value)
-  //   setTestPerPage(value)
-  //   setCurrentPage(0)
-  // }
+  // const { data: tests = [] } = useQuery({
+  //   queryKey: ["tests"],
+  //   queryFn: async () => {
+  //     const res = await axiosPublic.get(`/test?page=${currentPage}&size=${testPerPage}`);
+  //     return res.data;
+  //   },
+  // });
 
-  // const handlePrevPage = () => {
-  //   if(currentPage > 0){
-  //     setCurrentPage(currentPage - 1)
-  //   }
-  // }
+  const handleTestPerPage = e =>{
+    const value = parseInt(e.target.value)
+    console.log(value)
+    setTestPerPage(value)
+    setCurrentPage(0)
+  }
 
-  // const handleNextPage = () => {
-  //   if(currentPage < pages.length - 1){
-  //     setCurrentPage(currentPage + 1)
-  //   }
-  // }
+  const handlePrevPage = () => {
+    if(currentPage > 0){
+      setCurrentPage(currentPage - 1)
+    }
+  }
+
+  const handleNextPage = () => {
+    if(currentPage < pages.length - 1){
+      setCurrentPage(currentPage + 1)
+    }
+  }
   return (
     <div>
       <Helmet>
@@ -51,12 +76,24 @@ const AllTest = () => {
         <h2 className="uppercase text-5xl font-bold text-center mt-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">All test</h2>
         <div className="divider max-w-7xl mx-auto"></div>
       </div>
+      {/* for search */}
+      <div className="search-container flex justify-center">
+        <input
+          className="input input-bordered input-accent md:w-1/2"
+          placeholder="Search by name or category(this section is case insensitive)"
+          type="text"
+          id="search"
+          name="search"
+          value={searchQuery}
+          onChange={handleSearch}
+        />
+      </div>
       <div className="p-20">
         <div className="overflow-x-auto">
           <table className="table table-md">
             <thead>
               <tr>
-                <th>#</th>
+                <th>Test ID</th>
                 <th>Name</th>
                 <th>Category</th>
                 <th>Diagnostic Center</th>
@@ -65,10 +102,26 @@ const AllTest = () => {
               </tr>
             </thead>
             <tbody>
-                {
+                {/* {
                     tests.map((test, index) => 
                             <tr key={test._id} test={test}>
                             <th>{index + 1}</th>
+                            <td>{test.name}</td>
+                            <td>{test.category}</td>
+                            <td>{test.center}</td>
+                            <td>{test.price}</td>
+                            <td>
+                              <Link to={`/testdetails/${test._id}`}>
+                                <button><FaEye></FaEye></button>
+                              </Link>
+                            </td>
+                            </tr>
+                        )
+                } */}
+                {
+                    totalTest.map((test, index) => 
+                            <tr key={test._id} test={test}>
+                            <th>{test.test}</th>
                             <td>{test.name}</td>
                             <td>{test.category}</td>
                             <td>{test.center}</td>
@@ -86,7 +139,7 @@ const AllTest = () => {
         </div>
         
       </div>
-      {/* <div className="pagination flex justify-center items-center mt-20">
+      <div className="pagination flex justify-center items-center mt-20">
                 <button onClick={handlePrevPage}>Prev</button>
                 {
                   pages.map(page => <button 
@@ -102,7 +155,7 @@ const AllTest = () => {
                   <option value="30">30</option>
                   <option value="40">40</option>
                 </select>
-        </div> */}
+        </div>
     </div>
   );
 };

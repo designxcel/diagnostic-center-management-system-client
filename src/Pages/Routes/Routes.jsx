@@ -33,7 +33,8 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "/test",
-                element: <AllTest></AllTest>
+                element: <AllTest></AllTest>,
+                loader: ()=>fetch('http://localhost:5000/productsCount')
             },
             {
                 path: "/contact",
