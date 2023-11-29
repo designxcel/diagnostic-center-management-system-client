@@ -21,6 +21,8 @@ import Newsletters from "../Dashboard/Newsletters/Newsletters";
 import AdminRoute from "./AdminRoute";
 import Payment from "../Dashboard/Payment/Payment";
 import PaymentHistory from "../Dashboard/PaymentHistory/PaymentHistory";
+import ManageAppointment from "../Dashboard/ManageAppointment/ManageAppointment";
+import UpdateDoctor from "../Dashboard/DoctorsList/UpdateDoctor";
 
 const Routes = createBrowserRouter([
     {
@@ -101,6 +103,15 @@ const Routes = createBrowserRouter([
                 path: "doctorsList",
                 element: <AdminRoute><DoctorList></DoctorList></AdminRoute>
 
+            },
+            {
+                path: "updateDoctor/:id",
+                element: <UpdateDoctor></UpdateDoctor>,
+                loader: ({params}) => fetch(`https://diagnostic-center-management-system-server.vercel.app/drlists/${params.id}`)
+            },
+            {
+                path: "manageAppointment",
+                element: <ManageAppointment></ManageAppointment>
             },
             {
                 path: "addDoctor",

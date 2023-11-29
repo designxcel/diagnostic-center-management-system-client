@@ -1,7 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import UseAxiosSecure from "../../../Hooks/UseAxiosSecure";
-import { FaTrash } from "react-icons/fa";
+import { FaEye, FaTrash } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 
 const DoctorList = () => {
@@ -33,6 +34,7 @@ const DoctorList = () => {
                                 <th>Info</th>
                                 <th>Chamber</th>
                                 <th>Contact Point</th>
+                                <th>Details</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -62,6 +64,12 @@ const DoctorList = () => {
                                         </td>
                                         <td>{doctor.chamber}</td>
                                         <td>{doctor.contact}</td>
+                                        <td>
+                                            <Link to={`/dashboard/updateDoctor/${doctor._id}`}>
+                                                <FaEye></FaEye>
+                                            </Link>
+                                            
+                                        </td>
                                         <td className="text-red-700" alt="Delete"><FaTrash></FaTrash></td>
                                     </tr>
                                     )
