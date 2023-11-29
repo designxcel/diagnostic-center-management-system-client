@@ -23,7 +23,7 @@ const UpdateDoctor = () => {
         const updatedDoctor = {
             dname, degree, specialist, photo, chamber, contact, details
         }
-        fetch(`http://localhost:5000/drlists/${_id}`, {
+        fetch(`https://diagnostic-center-management-system-server.vercel.app/drlists/${_id}`, {
             method: 'PUT',
             headers:{
                 'content-type':'application/json'

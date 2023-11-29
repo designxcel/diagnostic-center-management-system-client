@@ -40,7 +40,7 @@ const Routes = createBrowserRouter([
             {
                 path: "/test",
                 element: <AllTest></AllTest>,
-                loader: ()=>fetch('http://localhost:5000/productsCount')
+                loader: ()=>fetch('https://diagnostic-center-management-system-server.vercel.app/productsCount')
             },
             {
                 path: "/contact",
@@ -67,7 +67,7 @@ const Routes = createBrowserRouter([
             {
                 path: "/blogsDetails/:id",
                 element: <BlogsDetails></BlogsDetails>,
-                loader: ({params})=> fetch(`http://localhost:5000/blogs/${params.id}`)
+                loader: ({params})=> fetch(`https://diagnostic-center-management-system-server.vercel.app/blogs/${params.id}`)
             }
         ]
     },

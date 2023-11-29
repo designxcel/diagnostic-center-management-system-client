@@ -26,7 +26,7 @@ const AllTest = () => {
   
   useEffect(() => {
     setLoading(true)
-    fetch(`http://localhost:5000/test?page=${currentPage}&size=${testPerPage}&search=${searchQuery}`)
+    fetch(`https://diagnostic-center-management-system-server.vercel.app/test?page=${currentPage}&size=${testPerPage}&search=${searchQuery}`)
     .then(res => res.json())
     .then(data => {
       setTotalTest(data)
