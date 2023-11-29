@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { FaTrash } from "react-icons/fa";
 import Swal from "sweetalert2";
 
@@ -76,6 +77,13 @@ const ManageAppointment = () => {
     
     return (
         <div>
+            <Helmet>
+                <title>TECHMED | Manage Appointment</title>
+            </Helmet>
+            <div className="">
+                <h2 className="uppercase text-5xl font-bold text-center mt-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Manage Patient Appointment</h2>
+                <div className="divider max-w-7xl mx-auto"></div>
+            </div>
             <div className="overflow-x-auto">
                 <table className="table table-zebra">
                     {/* head */}

@@ -23,11 +23,15 @@ import Payment from "../Dashboard/Payment/Payment";
 import PaymentHistory from "../Dashboard/PaymentHistory/PaymentHistory";
 import ManageAppointment from "../Dashboard/ManageAppointment/ManageAppointment";
 import UpdateDoctor from "../Dashboard/DoctorsList/UpdateDoctor";
+import ErrorPage from "../ErrorPage/ErrorPage";
+import BlogsDetails from "../Blogs/BlogsDetails";
+import AddTest from "../Dashboard/AddTest/AddTest";
 
 const Routes = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
+        errorElement:<ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -59,6 +63,11 @@ const Routes = createBrowserRouter([
                 path: "/testdetails/:id",
                 element: <PrivateRoute><TestDetails></TestDetails></PrivateRoute>,
                 loader: ({params})=> fetch(`https://diagnostic-center-management-system-server.vercel.app/test/${params.id}`)
+            },
+            {
+                path: "/blogsDetails/:id",
+                element: <BlogsDetails></BlogsDetails>,
+                loader: ({params})=> fetch(`http://localhost:5000/blogs/${params.id}`)
             }
         ]
     },
@@ -116,6 +125,10 @@ const Routes = createBrowserRouter([
             {
                 path: "addDoctor",
                 element: <AdminRoute><AddDoctor></AddDoctor></AdminRoute>
+            },
+            {
+                path: "addTest",
+                element: <AddTest></AddTest>
             },
             {
                 path: "newsletter",

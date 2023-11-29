@@ -3,17 +3,45 @@ import UseAxiosSecure from "../../../Hooks/UseAxiosSecure";
 import { FaEye, FaTrash } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const DoctorList = () => {
     const axiosSecure = UseAxiosSecure()
-    const { data: doctors = [] } = useQuery({
+    const { data: doctors = [], refetch } = useQuery({
         queryKey: ["doctors"],
         queryFn: async () => {
           const res = await axiosSecure.get("/drlists");
           return res.data;
         },
       });
+
+      const handleDelete = id =>{
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+                axiosSecure.delete(`/drlists/${id}`)
+                .then(res => {
+                    if(res.data.deletedCount > 0){
+                        Swal.fire({
+                            title: "Deleted!",
+                            text: "Your Doctor has been deleted.",
+                            icon: "success"
+                          });
+                          refetch()
+                    }
+                })
+            
+            }
+          });
+      }
     return (
         <div>
             <Helmet>
@@ -41,7 +69,7 @@ const DoctorList = () => {
                             <tbody>
                             {
                                 doctors.map((doctor, index) => 
-                                    <tr>
+                                    <tr key={doctor._id}>
                                         <th>{index + 1}</th>
                                         <th>
                                             <div className="avatar">
@@ -70,7 +98,10 @@ const DoctorList = () => {
                                             </Link>
                                             
                                         </td>
-                                        <td className="text-red-700" alt="Delete"><FaTrash></FaTrash></td>
+                                        <td className="text-red-700" alt="Delete"><button onClick={()=>handleDelete(doctor._id)}>
+                                            <FaTrash></FaTrash>
+                                            </button>
+                                            </td>
                                     </tr>
                                     )
                             }

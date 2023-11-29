@@ -5,6 +5,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 import Swal from 'sweetalert2';
 import UseAxiosSecure from '../../Hooks/UseAxiosSecure';
 import UseCart from '../../Hooks/UseCart';
+import { Helmet } from 'react-helmet-async';
 
 const TestDetails = () => {
     const detailsOfTest = useLoaderData()
@@ -57,6 +58,9 @@ const TestDetails = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>TECHMED | Test Details</title>
+            </Helmet>
             <div className='bg-gradient-to-r from-purple-400 to-pink-600 p-20 text-white font-bold text-3xl text-center'>
                 <h2>Details of: {name}</h2>
                 <p className='text-sm underline'>

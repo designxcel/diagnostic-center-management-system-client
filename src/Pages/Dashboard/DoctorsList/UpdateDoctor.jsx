@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
@@ -35,7 +36,7 @@ const UpdateDoctor = () => {
             if(data.modifiedCount > 0){
                 form.reset()
                 Swal.fire({
-                    imageUrl: 'https://i.ibb.co/GWCwq8z/logoIcon.png',
+                    imageUrl: 'https://i.ibb.co/smj93SQ/mainLogo.png',
                     title: 'Congratulations!',
                     text: 'You have successfully Updated Doctor info',
                     imageWidth: 400,
@@ -47,6 +48,9 @@ const UpdateDoctor = () => {
       }
     return (
         <div>
+            <Helmet>
+                <title>TECHMED | Update Doctors</title>
+            </Helmet>
             <div className='bg-gradient-to-r from-purple-400 to-pink-600 p-20 text-white font-bold text-3xl text-center mb-10'>
                 <h2>Info Update of: {doctors.name}</h2>
             </div>

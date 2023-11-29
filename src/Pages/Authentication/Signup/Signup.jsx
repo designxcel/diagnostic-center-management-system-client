@@ -146,7 +146,7 @@ const Signup = () => {
                 </label>
                 <input
                   type="email"
-                  placeholder="email"
+                  placeholder="email (example@gmail.com)"
                   name="email"
                   {...register("email", { required: true })}
                   className="input input-bordered"
@@ -208,7 +208,7 @@ const Signup = () => {
                 </label>
                 <input
                   type="password"
-                  placeholder="password"
+                  placeholder="password (example - 123456Aa@)"
                   name="password"
                   {...register("password", {
                     required: true,

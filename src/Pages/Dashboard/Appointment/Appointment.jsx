@@ -74,7 +74,7 @@ const Appointment = () => {
                                 <td>{item.contact}</td>
                                 <td>{item.chamber_time}</td>
                                 <td>
-                                    <div className='text-green-700'>
+                                    <div className='text-red-700'>
                                     <button>{item.status}</button>
                                     </div>
                                 </td>

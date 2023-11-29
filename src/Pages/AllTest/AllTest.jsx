@@ -2,14 +2,16 @@
 import { Helmet } from "react-helmet-async";
 // import UseAxiosPublic from "../../Hooks/UseAxiosPublic";
 // import { useQuery } from "@tanstack/react-query";
-import { FaEye } from "react-icons/fa";
+import { FaEye, FaTrash } from "react-icons/fa";
 import { Link, useLoaderData} from "react-router-dom";
 import { useEffect, useState } from "react";
 import './AllTest.css'
+import Swal from "sweetalert2";
+import UseAxiosSecure from "../../Hooks/UseAxiosSecure";
 
 const AllTest = () => {
   const [totalTest, setTotalTest] = useState([])
-  // const axiosPublic = UseAxiosPublic();
+  const axiosSecure = UseAxiosSecure()
   const [currentPage, setCurrentPage] = useState(0)
   const [testPerPage, setTestPerPage] = useState(10)
 
@@ -67,6 +69,33 @@ const AllTest = () => {
       setCurrentPage(currentPage + 1)
     }
   }
+
+  const handleDelete = id =>{
+    Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+            axiosSecure.delete(`/test/${id}`)
+            .then(res => {
+                if(res.data.deletedCount > 0){
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: "Test item has been deleted.",
+                        icon: "success"
+                      });
+                      refetch()
+                }
+            })
+        
+        }
+      });
+}
   return (
     <div>
       <Helmet>
@@ -99,6 +128,7 @@ const AllTest = () => {
                 <th>Diagnostic Center</th>
                 <th>Price</th>
                 <th>Details</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -130,6 +160,11 @@ const AllTest = () => {
                               <Link to={`/testdetails/${test._id}`}>
                                 <button><FaEye></FaEye></button>
                               </Link>
+                            </td>
+                            <td className="text-red-700">
+                              <button onClick={() => handleDelete(test._id)}>
+                                <FaTrash></FaTrash>
+                              </button>
                             </td>
                             </tr>
                         )

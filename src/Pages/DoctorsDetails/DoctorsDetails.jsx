@@ -9,6 +9,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 import UseAxiosSecure from '../../Hooks/UseAxiosSecure';
 import Swal from 'sweetalert2';
 import UseBooking from '../../Hooks/UseBooking';
+import { Helmet } from 'react-helmet-async';
 
 const DoctorsDetails = () => {
     const doctorInfo = useLoaderData()
@@ -64,6 +65,9 @@ const DoctorsDetails = () => {
     }
     return (
         <div className='max-w-7xl mx-auto mt-10'>
+            <Helmet>
+                <title>TECHMED | Doctor Details</title>
+            </Helmet>
             <div>
                 <div className="card card-side bg-base-100 shadow-md p-10">
                     

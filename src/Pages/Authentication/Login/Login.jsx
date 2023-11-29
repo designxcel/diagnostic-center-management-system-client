@@ -86,7 +86,7 @@ const Login = () => {
               </label>
               <input
                 type="email"
-                placeholder="email"
+                placeholder="email (example@gmail.com)"
                 name="email"
                 className="input input-bordered"
               />
@@ -97,7 +97,7 @@ const Login = () => {
               </label>
               <input
                 type="password"
-                placeholder="password"
+                placeholder="password (example - 123456Aa@)"
                 name="password"
                 className="input input-bordered"
               />
