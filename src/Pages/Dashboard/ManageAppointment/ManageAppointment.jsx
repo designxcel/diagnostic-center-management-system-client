@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 const ManageAppointment = () => {
     const [loadBooking, setLoadBooking] = useState([])
     useEffect(()=>{
-        fetch('https://diagnostic-center-management-system-server.vercel.app/drbooking')
+        fetch('https://diagnostic-center-management-server.vercel.app/drbooking')
         .then(res => res.json())
         .then(data => {
             setLoadBooking(data)
@@ -26,7 +26,7 @@ const ManageAppointment = () => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://diagnostic-center-management-system-server.vercel.app/drbooking/${id}`,{
+                fetch(`https://diagnostic-center-management-server.vercel.app/drbooking/${id}`,{
                     method: 'DELETE'
                 })
                 .then(res => res.json())
@@ -47,7 +47,7 @@ const ManageAppointment = () => {
     }
 
     const handleUpdateBooking = id =>{
-        fetch(`https://diagnostic-center-management-system-server.vercel.app/drbooking/${id}`,{
+        fetch(`https://diagnostic-center-management-server.vercel.app/drbooking/${id}`,{
             method: 'PATCH',
             headers:{
                 'content-type':'application/json'

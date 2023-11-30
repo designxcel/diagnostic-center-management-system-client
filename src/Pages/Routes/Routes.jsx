@@ -40,7 +40,7 @@ const Routes = createBrowserRouter([
             {
                 path: "/test",
                 element: <AllTest></AllTest>,
-                loader: ()=>fetch('https://diagnostic-center-management-system-server.vercel.app/productsCount')
+                loader: ()=>fetch('https://diagnostic-center-management-server.vercel.app/productsCount')
             },
             {
                 path: "/contact",
@@ -57,17 +57,17 @@ const Routes = createBrowserRouter([
             {
                 path: "/doctordetails/:id",
                 element: <PrivateRoute><DoctorsDetails></DoctorsDetails></PrivateRoute>,
-                loader: ({params}) => fetch(`https://diagnostic-center-management-system-server.vercel.app/drlists/${params.id}`)
+                loader: ({params}) => fetch(`https://diagnostic-center-management-server.vercel.app/drlists/${params.id}`)
             },
             {
                 path: "/testdetails/:id",
                 element: <PrivateRoute><TestDetails></TestDetails></PrivateRoute>,
-                loader: ({params})=> fetch(`https://diagnostic-center-management-system-server.vercel.app/test/${params.id}`)
+                loader: ({params})=> fetch(`https://diagnostic-center-management-server.vercel.app/test/${params.id}`)
             },
             {
                 path: "/blogsDetails/:id",
                 element: <BlogsDetails></BlogsDetails>,
-                loader: ({params})=> fetch(`https://diagnostic-center-management-system-server.vercel.app/blogs/${params.id}`)
+                loader: ({params})=> fetch(`https://diagnostic-center-management-server.vercel.app/blogs/${params.id}`)
             }
         ]
     },
@@ -116,7 +116,7 @@ const Routes = createBrowserRouter([
             {
                 path: "updateDoctor/:id",
                 element: <UpdateDoctor></UpdateDoctor>,
-                loader: ({params}) => fetch(`https://diagnostic-center-management-system-server.vercel.app/drlists/${params.id}`)
+                loader: ({params}) => fetch(`https://diagnostic-center-management-server.vercel.app/drlists/${params.id}`)
             },
             {
                 path: "manageAppointment",

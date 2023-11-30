@@ -24,7 +24,7 @@ const AddTest = () => {
             name, price, category, time, availibility, center, details, test
         }
 
-        fetch('https://diagnostic-center-management-system-server.vercel.app/test',{
+        fetch('https://diagnostic-center-management-server.vercel.app/test',{
             method: 'POST',
             headers: {
                 "content-type": "application/json"

@@ -15,7 +15,7 @@ const Contact = () => {
 
         const info = {name, email, details}
 
-        fetch('https://diagnostic-center-management-system-server.vercel.app/contact', {
+        fetch('https://diagnostic-center-management-server.vercel.app/contact', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
