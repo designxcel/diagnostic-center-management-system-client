@@ -4,12 +4,16 @@ import { Helmet } from "react-helmet-async";
 // import { useQuery } from "@tanstack/react-query";
 import { FaEye, FaTrash } from "react-icons/fa";
 import { Link, useLoaderData} from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import './AllTest.css'
 import Swal from "sweetalert2";
 import UseAxiosSecure from "../../Hooks/UseAxiosSecure";
+import { AuthContext } from "../Provider/AuthProvider";
+import UseAdmin from "../../Hooks/UseAdmin";
 
 const AllTest = () => {
+  const {user } = useContext(AuthContext)
+  // const {isAdmin} = UseAdmin()
   const [totalTest, setTotalTest] = useState([])
   const axiosSecure = UseAxiosSecure()
   const [currentPage, setCurrentPage] = useState(0)
@@ -128,7 +132,7 @@ const AllTest = () => {
                 <th>Diagnostic Center</th>
                 <th>Price</th>
                 <th>Details</th>
-                <th>Action</th>
+                {/* <th>Action</th> */}
               </tr>
             </thead>
             <tbody>
@@ -161,11 +165,11 @@ const AllTest = () => {
                                 <button><FaEye></FaEye></button>
                               </Link>
                             </td>
-                            <td className="text-red-700">
-                              <button onClick={() => handleDelete(test._id)}>
+                            {/* <td className="text-red-700">
+                              {user.role === 'admin'? <button onClick={() => handleDelete(test._id)}>
                                 <FaTrash></FaTrash>
-                              </button>
-                            </td>
+                              </button> : 'Only for admin'}
+                            </td> */}
                             </tr>
                         )
                 }
