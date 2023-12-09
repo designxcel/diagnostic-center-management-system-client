@@ -2,6 +2,25 @@
 
 ### Live Link - https://diagnostic-center-manage-b294b.web.app/
 
+-------------------------------------------------------------------------------
+## Special things - 
+    -- Applied jwt (json web token)
+    -- Applied stripe payment method
+-------------------------------------------------------------------------------
+
+
+#### Language that i used for this project
+------------------------------------------
+1. for frontend - 
+    ## 1.1 React Js
+    ## 1.2 tailwindCSS (css framework)
+    ## 1.3 react router
+    ## 1.4 DaisyUI (component library for tailwind CSS)
+    ## 1.5 firebase (for authentication system)
+
+2. for backend - 
+    ## 2.1 mongoDB (for database)
+
 I have created a diagnostic center management system. its project work. The Name of this project is 'TECHMED'. It has few services. I am trying to describe these services:
 
 1. Doctors list: i have added a tab section where you can find a doctors list. Once anyone click to details button it redirect to details page of doctor. from there anyone can book his/her appointment. Also you can check every details of that doctor.
