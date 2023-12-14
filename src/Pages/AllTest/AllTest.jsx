@@ -36,15 +36,13 @@ const AllTest = () => {
       setTotalTest(data)
       setLoading(false)
     })
-    .catch((error) => {
-      console.error("Error fetching data:", error);
-      setLoading(false);
-    });
   },[currentPage, testPerPage, searchQuery])
 
   const handleSearch = (e) => {
-    setSearchQuery(e.target.value);
-    setCurrentPage(0); 
+    const newSearchQuery = e.target.value;
+    setSearchQuery(newSearchQuery);
+    console.log('Search Query:', newSearchQuery);
+    setCurrentPage(0);
   };
 
   // const { data: tests = [] } = useQuery({
@@ -126,7 +124,6 @@ const AllTest = () => {
           <table className="table table-md">
             <thead>
               <tr>
-                <th>Test ID</th>
                 <th>Name</th>
                 <th>Category</th>
                 <th>Diagnostic Center</th>
@@ -136,42 +133,26 @@ const AllTest = () => {
               </tr>
             </thead>
             <tbody>
-                {/* {
-                    tests.map((test, index) => 
-                            <tr key={test._id} test={test}>
-                            <th>{index + 1}</th>
-                            <td>{test.name}</td>
-                            <td>{test.category}</td>
-                            <td>{test.center}</td>
-                            <td>{test.price}</td>
-                            <td>
-                              <Link to={`/testdetails/${test._id}`}>
-                                <button><FaEye></FaEye></button>
-                              </Link>
-                            </td>
-                            </tr>
-                        )
-                } */}
+               
                 {
-                    totalTest.map((test, index) => 
-                            <tr key={test._id} test={test}>
-                            <th>{test.test}</th>
-                            <td>{test.name}</td>
-                            <td>{test.category}</td>
-                            <td>{test.center}</td>
-                            <td>{test.price}</td>
-                            <td>
-                              <Link to={`/testdetails/${test._id}`}>
-                                <button><FaEye></FaEye></button>
-                              </Link>
-                            </td>
-                            {/* <td className="text-red-700">
-                              {user.role === 'admin'? <button onClick={() => handleDelete(test._id)}>
-                                <FaTrash></FaTrash>
-                              </button> : 'Only for admin'}
-                            </td> */}
-                            </tr>
-                        )
+                  totalTest.map((test) => 
+                  <tr key={test._id} test={test}>
+                  <td>{test.name}</td>
+                  <td>{test.category}</td>
+                  <td>{test.center}</td>
+                  <td>{test.price}</td>
+                  <td>
+                    <Link to={`/testdetails/${test._id}`}>
+                      <button><FaEye></FaEye></button>
+                    </Link>
+                  </td>
+                  {/* <td className="text-red-700">
+                    {user.role === 'admin'? <button onClick={() => handleDelete(test._id)}>
+                      <FaTrash></FaTrash>
+                    </button> : 'Only for admin'}
+                  </td> */}
+                  </tr>
+                  )
                 }
             </tbody>
           </table>
